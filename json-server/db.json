@@ -1,0 +1,354 @@
+{
+  "products": [
+    {
+      "id": "a8d9ae56-0fdb-4c1c-bd6b-5351bbb921e6",
+      "name": "Manzana Roja",
+      "status": "Active",
+      "category": "Fruit",
+      "price": 14.86
+    },
+    {
+      "id": "c5fedb85-85db-44b1-a02d-d1420536bb23",
+      "name": "Banana",
+      "status": "Inactive",
+      "category": "Fruit",
+      "price": 17
+    },
+    {
+      "id": "10fbe11f-d33a-4fb1-9b58-25ea6bedea7d",
+      "name": "Naranja",
+      "status": "Inactive",
+      "category": "Fruit",
+      "price": 4.03
+    },
+    {
+      "id": "72993b3e-09d8-4c37-8546-96e1274a612e",
+      "name": "Fresa",
+      "status": "Active",
+      "category": "Fruit",
+      "price": 18.84
+    },
+    {
+      "id": "c759b654-d601-4cd3-b1c2-13eace958cc3",
+      "name": "Uva",
+      "status": "Active",
+      "category": "Fruit",
+      "price": 8.92
+    },
+    {
+      "id": "36f46972-c4b9-441e-ba2c-e77b11b17a07",
+      "name": "Mango",
+      "status": "Active",
+      "category": "Fruit",
+      "price": 12.59
+    },
+    {
+      "id": "c4ac7026-f530-4264-8779-6ae28e16119a",
+      "name": "Piña",
+      "status": "Active",
+      "category": "Fruit",
+      "price": 15.61
+    },
+    {
+      "id": "88c1d91e-47ac-44a8-a9f7-8c203d1fa1d9",
+      "name": "Kiwi",
+      "status": "Active",
+      "category": "Fruit",
+      "price": 9.36
+    },
+    {
+      "id": "4bbaf2f6-089b-4a4d-a752-38358415e20e",
+      "name": "Melón",
+      "status": "Active",
+      "category": "Fruit",
+      "price": 16.37
+    },
+    {
+      "id": "94c91454-b576-4735-b363-d472ee5be386",
+      "name": "Sandía",
+      "status": "Inactive",
+      "category": "Fruit",
+      "price": 14.08
+    },
+    {
+      "id": "c9229345-e767-440e-a99a-e0216894785e",
+      "name": "Durazno",
+      "status": "Inactive",
+      "category": "Fruit",
+      "price": 16.01
+    },
+    {
+      "id": "dbcc8b02-b8da-49da-9115-f23c8fbab10c",
+      "name": "Ciruela",
+      "status": "Active",
+      "category": "Fruit",
+      "price": 20.9
+    },
+    {
+      "id": "e9ac88e3-8551-452f-b832-077fb6f54a1b",
+      "name": "Cereza",
+      "status": "Active",
+      "category": "Fruit",
+      "price": 1.78
+    },
+    {
+      "id": "571f84d4-d37d-46b5-9b4d-e6424bf723a7",
+      "name": "Arándano",
+      "status": "Active",
+      "category": "Fruit",
+      "price": 20.48
+    },
+    {
+      "id": "8b953640-e301-410d-9604-68a02ee36617",
+      "name": "Frambuesa",
+      "status": "Inactive",
+      "category": "Fruit",
+      "price": 9.9
+    },
+    {
+      "id": "8613b334-9e13-4b63-ab65-fa586478e366",
+      "name": "Mora",
+      "status": "Inactive",
+      "category": "Fruit",
+      "price": 12.29
+    },
+    {
+      "id": "2279c8f4-aa11-4d3e-911d-00cdd28c74c2",
+      "name": "Papaya",
+      "status": "Inactive",
+      "category": "Fruit",
+      "price": 19.09
+    },
+    {
+      "id": "e7bafe19-c8e2-4165-8b3f-fdffd26ef1c9",
+      "name": "Guayaba",
+      "status": "Active",
+      "category": "Fruit",
+      "price": 5.98
+    },
+    {
+      "id": "55a9bf2e-6b0a-4beb-855e-e26afc20d514",
+      "name": "Maracuyá",
+      "status": "Inactive",
+      "category": "Fruit",
+      "price": 20.58
+    },
+    {
+      "id": "aad3084c-6a91-49cd-b538-a935e80cd800",
+      "name": "Granada",
+      "status": "Inactive",
+      "category": "Fruit",
+      "price": 17.46
+    },
+    {
+      "id": "5249147f-1f98-49ed-8a6f-2a1e6d10b838",
+      "name": "Zanahoria",
+      "status": "Active",
+      "category": "Vegetables",
+      "price": 2.5
+    },
+    {
+      "id": "448a1337-3f24-4b7f-b0d0-b25f894bc998",
+      "name": "Tomate",
+      "status": "Inactive",
+      "category": "Vegetables",
+      "price": 9.4
+    },
+    {
+      "id": "473727ff-f566-4b85-b312-3fbb04587d78",
+      "name": "Lechuga",
+      "status": "Active",
+      "category": "Vegetables",
+      "price": 1.48
+    },
+    {
+      "id": "46c6ca82-049a-453c-af85-f37ee122d907",
+      "name": "Brócoli",
+      "status": "Inactive",
+      "category": "Vegetables",
+      "price": 7.04
+    },
+    {
+      "id": "b3fbeeaa-37eb-4e1e-bd65-b42e0e732fd3",
+      "name": "Espinaca",
+      "status": "Active",
+      "category": "Vegetables",
+      "price": 6.25
+    },
+    {
+      "id": "cea16767-5ef4-4f32-b08f-a10793df71aa",
+      "name": "Cebolla",
+      "status": "Active",
+      "category": "Vegetables",
+      "price": 17.71
+    },
+    {
+      "id": "31dfd7e8-3b9c-45b4-9d6f-05c76cc2ce53",
+      "name": "Ajo",
+      "status": "Active",
+      "category": "Vegetables",
+      "price": 12.58
+    },
+    {
+      "id": "a9ae87d0-1dd6-4277-854a-ac826b859f97",
+      "name": "Pimiento",
+      "status": "Active",
+      "category": "Vegetables",
+      "price": 4.9
+    },
+    {
+      "id": "5b1d34bb-bb27-4c65-a616-3776604e1110",
+      "name": "Calabacín",
+      "status": "Active",
+      "category": "Vegetables",
+      "price": 11.41
+    },
+    {
+      "id": "4e9123ec-da5b-4bbd-a607-788299111728",
+      "name": "Berenjena",
+      "status": "Active",
+      "category": "Vegetables",
+      "price": 18.07
+    },
+    {
+      "id": "6ff95723-7917-4e0c-b0ba-2356621cc39a",
+      "name": "Papa",
+      "status": "Active",
+      "category": "Vegetables",
+      "price": 17.95
+    },
+    {
+      "id": "8d09867a-cfa4-4ed9-835e-7a5c9dc80a41",
+      "name": "Camote",
+      "status": "Active",
+      "category": "Vegetables",
+      "price": 4.64
+    },
+    {
+      "id": "8b380f88-42c4-41f8-99a8-6eaa4133c56c",
+      "name": "Coliflor",
+      "status": "Inactive",
+      "category": "Vegetables",
+      "price": 17.88
+    },
+    {
+      "id": "f8be3d3c-4835-4645-a106-e58359e98066",
+      "name": "Apio",
+      "status": "Active",
+      "category": "Vegetables",
+      "price": 20.45
+    },
+    {
+      "id": "b7ec98ad-c5e8-46d5-92bb-c3ba0f095e0a",
+      "name": "Pepino",
+      "status": "Inactive",
+      "category": "Vegetables",
+      "price": 20.17
+    },
+    {
+      "id": "19c94476-cc2c-4aaa-8567-8a12a45a8f6f",
+      "name": "Rábano",
+      "status": "Active",
+      "category": "Vegetables",
+      "price": 10.87
+    },
+    {
+      "id": "c8bfc4fb-d457-4e31-8ba3-aea96f066d0e",
+      "name": "Remolacha",
+      "status": "Active",
+      "category": "Vegetables",
+      "price": 4.7
+    },
+    {
+      "id": "d82536fb-1fa6-4926-b715-10b35b66f3b3",
+      "name": "Espárrago",
+      "status": "Active",
+      "category": "Vegetables",
+      "price": 6.92
+    },
+    {
+      "id": "302153a8-1ae2-45b9-a7de-007abdda0e04",
+      "name": "Alcachofa",
+      "status": "Inactive",
+      "category": "Vegetables",
+      "price": 3.83
+    },
+    {
+      "id": "88d8f4f3-6488-4ee6-b0e1-191594bf0934",
+      "name": "Col",
+      "status": "Inactive",
+      "category": "Vegetables",
+      "price": 17.31
+    },
+    {
+      "id": "27e03099-067e-416c-b59c-93e7633a2e5f",
+      "name": "Pechuga de Pollo",
+      "status": "Active",
+      "category": "Meat",
+      "price": 17.6
+    },
+    {
+      "id": "ed9842f4-32fa-4856-8e87-d64a77469b53",
+      "name": "Carne Molida",
+      "status": "Active",
+      "category": "Meat",
+      "price": 18.65
+    },
+    {
+      "id": "2ab0510f-ec41-4a0f-8a20-4c7ce9820ee3",
+      "name": "Salchichas",
+      "status": "Active",
+      "category": "Meat",
+      "price": 9.57
+    },
+    {
+      "id": "4d85fe55-16b1-40f9-a95b-f4cb349093a7",
+      "name": "Chorizo",
+      "status": "Active",
+      "category": "Meat",
+      "price": 6.81
+    },
+    {
+      "id": "48f620b8-c29d-4e38-8c76-3f06d86ef116",
+      "name": "Filete de Res",
+      "status": "Inactive",
+      "category": "Meat",
+      "price": 17.59
+    },
+    {
+      "id": "99289b7c-35bd-47b0-84bd-048547952dd1",
+      "name": "Costillas",
+      "status": "Active",
+      "category": "Meat",
+      "price": 18.78
+    },
+    {
+      "id": "bfb223b3-94e0-43d6-8e8f-c3f99003b36f",
+      "name": "Pollo Entero",
+      "status": "Active",
+      "category": "Meat",
+      "price": 11.11
+    },
+    {
+      "id": "19730a61-b117-43b5-a0aa-cc8655fb2a5e",
+      "name": "Jamón",
+      "status": "Active",
+      "category": "Meat",
+      "price": 6.59
+    },
+    {
+      "id": "575ac165-1167-444b-9b5f-e2af27cb14bb",
+      "name": "Tocino",
+      "status": "Active",
+      "category": "Meat",
+      "price": 11.04
+    },
+    {
+      "id": "70565976-355c-4341-872e-454d0cd92842",
+      "name": "Pavo",
+      "status": "Active",
+      "category": "Meat",
+      "price": 16.04
+    }
+  ]
+}

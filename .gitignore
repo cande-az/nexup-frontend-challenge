@@ -128,6 +128,9 @@ dist
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
+# vscode
+.vscode/
+
 # yarn v2
 .yarn/cache
 .yarn/unplugged
@@ -136,4 +139,5 @@ dist
 .pnp.*
 
 # other
+.DS_Store
 .DS_Store
