@@ -66,3 +66,13 @@ La verdad podría haber usado useState y useEffect directamente, pero SWR me aho
 Para los estilos, elegí usar `styled-components` directamente en cada componente en lugar de crear archivos CSS separados. Esto me permite tener los estilos unificados con el componente, reduciendo la cantidad de archivos en la prueba técnica. Como estilos base, agregué `normalize.css` para resetear estilos del navegador y un `index.css` con variables CSS para colores y tipografía que se pueden reutilizar en los styled-components.
 
 > **Nota:** También creé una función utilitaria `buildQueryString` que construye query strings a partir de objetos de filtros genéricos. Aunque es una función simple, me permite tener una forma reutilizable de construir los parámetros de URL para las peticiones a la API, y solo incluye los parámetros que tienen valor (evita agregar `?category=undefined` por ejemplo). Es una pequeña abstracción que hace el código más limpio.
+
+### Commit 3: Filtro de Categorías y Mejoras Visuales
+
+Completé la funcionalidad del filtro de categorías conectándolo con el estado y sincronizándolo con la URL usando query parameters. Agregué colores diferenciados por categoría en los productos, un badge "Inactive" para productos inactivos, y manejo de estados de loading/error. También implementé ordenamiento por nombre ascendente por defecto.
+
+Después refactoricé las funciones relacionadas con categorías a `utils/category.ts` para tener mejor organización del código y reutilizar la utilidad `buildQueryString` que ya tenía. Esto hace el código más mantenible y evita duplicación.
+
+> **✅ Hasta acá ya se cumplió el challenge en cuanto a objetivos base y el agregar API.**
+
+> **Nota:** Para la sincronización con la URL usé APIs nativas del navegador en lugar de React Router para mantener las dependencias mínimas. La documentación de las funcionalidades `utils` la hice con chat, para ahorrar tiempo.

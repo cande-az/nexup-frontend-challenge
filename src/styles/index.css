@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #1976d2;
+  --color-primary: oklch(69.6% 0.17 162.48);
   --color-bg-base: #f5f5f5;
   --color-border-base: #e5e5e5;
   --color-text-muted: #4a4a4a;

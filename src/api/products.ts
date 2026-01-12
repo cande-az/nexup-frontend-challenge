@@ -11,7 +11,11 @@ export const getProducts = async (
   filters?: ProductFilters,
 ): Promise<Product[]> => {
   try {
-    const queryString = buildQueryString<ProductFilters>(filters);
+    const queryString = buildQueryString<ProductFilters>({
+      ...filters,
+      _sort: 'name',
+      _order: 'asc',
+    });
     const response = await apiClient.get<Product[]>(`/products${queryString}`);
     return response.data;
   } catch (error) {
