@@ -7,7 +7,7 @@ import { useProducts } from '../hooks/useProducts';
 import { useSearch } from '../hooks/useSearch';
 import { ProductCategory } from '../models/ProductCategory';
 import type { ProductFilters } from '../models/Product';
-import { readCategoryFromSearch, writeCategoryToUrl } from '../utils/category';
+import { readCategoryFromUrl, writeCategoryToUrl } from '../utils/category';
 
 const Styled = {
   Layout: styled.div`
@@ -47,16 +47,11 @@ const Styled = {
   `,
 };
 
-const Main = styled.div`
-  flex: 1 1 0px;
-  min-width: 0;
-`;
-
 export const ProductManager: React.FC = () => {
   const [selectedCategory, setSelectedCategory] =
     useState<ProductCategory | null>(() => {
       if (typeof window === 'undefined') return null;
-      return readCategoryFromSearch(window.location.search);
+      return readCategoryFromUrl(window.location.search);
     });
 
   // ![ categorias ]
@@ -70,7 +65,7 @@ export const ProductManager: React.FC = () => {
     if (typeof window === 'undefined') return;
 
     const onPopState = () => {
-      setSelectedCategory(readCategoryFromSearch(window.location.search));
+      setSelectedCategory(readCategoryFromUrl(window.location.search));
       // El hook useSearch maneja la sincronización de búsqueda con popstate
     };
 
@@ -86,7 +81,7 @@ export const ProductManager: React.FC = () => {
 
   // ![ búsqueda ]
   // ?: Hook de búsqueda
-  const { searchInput, searchQuery, handleSearchChange, clearSearch } =
+  const { searchQuery, searchInput, handleSearchChange, clearSearch } =
     useSearch();
 
   // ![ AMBOS ]
@@ -130,9 +125,9 @@ export const ProductManager: React.FC = () => {
         />
       </Styled.Sidebar>
 
-      <Main>
+      <Styled.Main>
         <ProductList productList={products} loading={loading} error={error} />
-      </Main>
+      </Styled.Main>
     </Styled.Layout>
   );
 };

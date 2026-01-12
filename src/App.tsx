@@ -7,7 +7,7 @@ const Styled = {
     background: var(--color-primary);
     color: #fff;
     padding: 1rem 2rem;
-    box-shadow: '0 2px 8px rgba(0,0,0,0.04)';
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   `,
   Title: styled.h1`
     margin: 0;

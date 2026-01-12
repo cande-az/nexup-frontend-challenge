@@ -44,14 +44,21 @@ nexup-frontend-challenge/
 ```
 
 ---
+
 ## 🔏 Resumen
+
 Este challenge me tomó aproximadamente dos horas. Lo fui haciendo en los tiempos muertos que tenía entre tareas.
 
 Mi estrategia fue usar json-server para simular bien el backend y poder aplicar buenas prácticas en el front. La idea era no caer en meter toda la lógica del lado del cliente, porque muchas de esas cosas normalmente se resuelven del otro lado.
 
 En cuanto a los estilos, los hice directamente en cada componente con `styled-components`, era lo mas sencillo para no crear tantos archivos. También tome la decision de mostrar las categorías en lista en vez de dropdown, como para que se pareciera mas a una app real.
 
-Lo único que no llegué a implementar fue lo de stock, el resto quedó prácticamente todo hecho.
+Lo único que no llegué a implementar fue lo de stock, el resto quedó prácticamente todo hecho. Me tomé algunas libertades:
+
+- Los filtros de categoría y búsqueda se sincronizan con la URL, esto en una app real nos permitiría compartir una búsqueda o una categoría como sección.
+- Limité la posibilidad de combinar filtros, no era necesario pero no poder buscar en toda la lista por estar en una categoría me hacía ruido en la experiencia.
+- Agregué SWR en vez de hacer de 0 la lógica para loading, error y list. En muchas apps es un estándar pero en mi caso simplemente buscaba ahorrar tiempo para cumplir con lo que se requería en el test.
+- Sumé el debounce para la searchBar, no era necesario pero lo considero algo muy importante cuando se utiliza una search sincronizada con una `query backend`. Sería una forma rápida de colapsar todo.
 
 ## 📝 Proceso de Desarrollo
 
@@ -94,3 +101,6 @@ Para no repetir lógica, hice unas utilidades genéricas en `utils/url.ts` (`rea
 En `ProductManager` dejé búsqueda y categoría como excluyentes: si el usuario busca, limpio la categoría, y si elige categoría, limpio la búsqueda. La idea es que no se pisen los filtros y sea más claro para el usuario. Los filtros los armo con `useMemo` para no recalcular al pedo.
 
 > **Nota:** el debounce evita una request por cada tecla. Y lo de `popstate` es para que el back/forward del navegador mantenga el estado alineado con la URL (esto lo sumé como plus; no lo probé ultra a fondo).
+
+### Commit 5: End commit
+Revise el codigo, corregi algunos errores y termine este archivo.

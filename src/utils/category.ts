@@ -9,7 +9,7 @@ const CATEGORY_SET = new Set<string>(Object.values(ProductCategory));
  * @param search - String de búsqueda de la URL (ej: "?category=Fruit")
  * @returns La categoría encontrada o null si no existe o no es válida
  */
-export function readCategoryFromSearch(search: string): ProductCategory | null {
+export function readCategoryFromUrl(search: string): ProductCategory | null {
   const raw = readUrlParam(search, 'category');
   if (!raw) return null;
   return CATEGORY_SET.has(raw) ? (raw as ProductCategory) : null;

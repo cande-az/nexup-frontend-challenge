@@ -1,4 +1,3 @@
-// src/hooks/useProducts.ts
 import useSWR from 'swr';
 import type { Product, ProductFilters } from '../models/Product';
 import { getProducts } from '../api/products';
