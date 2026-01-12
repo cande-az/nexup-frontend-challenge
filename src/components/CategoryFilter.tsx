@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ProductCategory } from '../models/ProductCategory';
-import { buildUrlWithCategory } from '../utils/category';
+import { writeCategoryToUrl } from '../utils/category';
 
 const Styled = {
   Container: styled.div`
@@ -53,8 +53,7 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
   onCategoryChange,
 }) => {
   const handleCategoryClick = (category: ProductCategory | null) => {
-    const newUrl = buildUrlWithCategory(category);
-    window.history.pushState({}, '', newUrl);
+    writeCategoryToUrl(category);
     onCategoryChange(category);
   };
 

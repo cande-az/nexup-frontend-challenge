@@ -1,6 +1,6 @@
 # Proceso de Desarrollo - Nexup Frontend Challenge
 
-Proceso de desarrollo del challenge técnico, pensamientos,orden y decisiones que fui tomando al implementarlo.
+Proceso de desarrollo del challenge técnico, pensamientos, orden y decisiones que fui tomando al implementarlo.
 
 ---
 
@@ -44,6 +44,14 @@ nexup-frontend-challenge/
 ```
 
 ---
+## 🔏 Resumen
+Este challenge me tomó aproximadamente dos horas. Lo fui haciendo en los tiempos muertos que tenía entre tareas.
+
+Mi estrategia fue usar json-server para simular bien el backend y poder aplicar buenas prácticas en el front. La idea era no caer en meter toda la lógica del lado del cliente, porque muchas de esas cosas normalmente se resuelven del otro lado.
+
+En cuanto a los estilos, los hice directamente en cada componente con `styled-components`, era lo mas sencillo para no crear tantos archivos. También tome la decision de mostrar las categorías en lista en vez de dropdown, como para que se pareciera mas a una app real.
+
+Lo único que no llegué a implementar fue lo de stock, el resto quedó prácticamente todo hecho.
 
 ## 📝 Proceso de Desarrollo
 
@@ -76,3 +84,13 @@ Después refactoricé las funciones relacionadas con categorías a `utils/catego
 > **✅ Hasta acá ya se cumplió el challenge en cuanto a objetivos base y el agregar API.**
 
 > **Nota:** Para la sincronización con la URL usé APIs nativas del navegador en lugar de React Router para mantener las dependencias mínimas. La documentación de las funcionalidades `utils` la hice con chat, para ahorrar tiempo.
+
+### Commit 4: búsqueda fulltext
+
+Metí la búsqueda fulltext como extra opcional del challenge. Armé el componente SearchInput con un botoncito para limpiar, y un hook useSearch que maneja el estado con debounce de 300ms para no spamear la API. Además el hook sincroniza el texto de búsqueda con la URL usando el parámetro q.
+
+Para no repetir lógica, hice unas utilidades genéricas en `utils/url.ts` (`readUrlParam` y `writeUrlParam`) que sirven tanto para categoría como para búsqueda, así no duplico código al leer/escribir params en la URL.
+
+En `ProductManager` dejé búsqueda y categoría como excluyentes: si el usuario busca, limpio la categoría, y si elige categoría, limpio la búsqueda. La idea es que no se pisen los filtros y sea más claro para el usuario. Los filtros los armo con `useMemo` para no recalcular al pedo.
+
+> **Nota:** el debounce evita una request por cada tecla. Y lo de `popstate` es para que el back/forward del navegador mantenga el estado alineado con la URL (esto lo sumé como plus; no lo probé ultra a fondo).

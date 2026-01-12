@@ -13,4 +13,5 @@ export interface Product {
 export interface ProductFilters extends Record<string, unknown> {
   category?: ProductCategory;
   status?: ProductStatus;
+  q?: string; // Búsqueda fulltext
 }

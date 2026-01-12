@@ -33,21 +33,21 @@ Este challenge está diseñado para evaluar tus habilidades en React y TypeScrip
 
 ## Tareas
 El objetivo de este challenge es armar un listado de productos que pueda ser filtrado por un selector de categoría:
-- El selector de categoría `CategoryFilter` debe por defecto mostrar una categoría de `Todos`, y debe permitir elegir alguno de los valores permitidos (la lista puede ser expandida si se lo desea). Al elegir un valor, se debe actualizar la lista de productos
-- El listado de productos `ProductList`
+- El selector de categoría `CategoryFilter` debe por defecto mostrar una categoría de `Todos`, y debe permitir elegir alguno de los valores permitidos (la lista puede ser expandida si se lo desea). Al elegir un valor, se debe actualizar la lista de productos ✅
+- El listado de productos `ProductList` ✅
   - La lista debe mostrarse filtrada según la categoría elegida
   - Cada item debe mostrar los siguientes datos:
     - Estado del producto: Debe mostrarse como una indicador de color según el estado del producto
     - Nombre del producto
     - Categoria del producto
     - Precio del producto: Debe mostrarse con dos puntos decimales y el signo `$`
-- La interfaz debe ser sencilla y clara. El estilado de componentes es libre, pero se valorará la correcta utilización de técnicas de CSS como Flexbox, Grid, etc.
+- La interfaz debe ser sencilla y clara. El estilado de componentes es libre, pero se valorará la correcta utilización de técnicas de CSS como Flexbox, Grid, etc. ✅
 
 ### Objetivos opcionales
-- Simular que la obtensión del listado de productos proviene de una API Rest
-- Agregar un filtro por fulltext de los productos
-- Armar funcionalidad de stock: Por cada producto podria tenerse un stock disponible, y entonces mostrar el stock disponible en el listado y permitir filtrar unicamente aquellos productos con stock
-- Hacer un diseño responsive
+- Simular que la obtensión del listado de productos proviene de una API Rest ✅
+- Agregar un filtro por fulltext de los productos ✅
+- Armar funcionalidad de stock: Por cada producto podria tenerse un stock disponible, y entonces mostrar el stock disponible en el listado y permitir filtrar unicamente aquellos productos con stock ❌
+- Hacer un diseño responsive ✅
 
 ## Entregables
 - Un enlace a un repositorio de GitHub con el código de la aplicación React.
